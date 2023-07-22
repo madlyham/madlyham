@@ -4,7 +4,8 @@ header {
 }
 
 #he1 {
-    border-bottom: solid 5px #00b894
+    border-bottom: solid 5px #00b894;
+    z-index: 5;
 }
 
 main {
