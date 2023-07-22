@@ -3,6 +3,10 @@ header {
     font-family: 'Bodoni Moda', serif;
 }
 
+#he1 {
+    border-bottom: solid 5px #16a085
+}
+
 main {
     font-size: 35px
 }
