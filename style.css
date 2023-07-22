@@ -1,10 +1,10 @@
 header {
     font-size: 65px;
-    font-family: 'Bodoni Moda', serif;
+    font-family: 'Bodoni Moda', serif
 }
 
 #he1 {
-    border-bottom: solid 5px #16a085
+    border-bottom: solid 5px #00b894
 }
 
 main {
@@ -14,8 +14,8 @@ main {
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    color: ivory;
-    background: #2c3e50;
+    color: #00b894;
+    background: #2d3436;
     font-size: 35px;
     overflow-x: hidden;
 }
@@ -30,11 +30,12 @@ section {
 }
 
 .green {
-    background: #16a085
+    background: #00b894;
+    color: #2d3436;
 }
 
 .red {
-    background: #560000
+    background: #d63031
 }
 
 .light {
@@ -59,7 +60,7 @@ section {
     border-radius: 100% 45%;
     width: 61%;
     height: 100%;
-    background: #16a085;
+    background: #00b894;
     transform: translate(75%, 50%);
 }
 
@@ -70,7 +71,7 @@ section {
     border-radius: 100% 45%;
     width: 61%;
     height: 100%;
-    background: #2c3e50;
+    background: #2d3436;
     transform: translate(-20%, 50%);
     z-index: 1;
 }
@@ -81,7 +82,7 @@ section {
     border-top-right-radius: 50% 100%;
     bottom: 0;
     height: 20%;
-    background: #34495e;
+    background: #16a085;
     z-index: -1;
 
 }
@@ -103,11 +104,11 @@ section {
 }
 
 .wave .shape-fill {
-    fill: #16a085;
+    fill: #00b894;
 }
 
 .spacer {
-    aspect-ratio: 900/300;
+    aspect-ratio: 1000/200;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,7 +116,7 @@ section {
 }
 
 .waves {
-    background-image: url('./images/waves.svg');
+    background-image: url('./images/wavess.svg');
 }
 
 .bluewave {

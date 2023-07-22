@@ -2,17 +2,19 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <link rel="shortcut icon" href="images\icon.ico" type="image/ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" 
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&family=Open+Sans:ital,wght@1,300&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,600&family=Open+Sans:ital,wght@1,300&display=swap"
+        rel="stylesheet">
     <title>Snake Game</title>
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -35,18 +37,18 @@
                 Anyway enjoy the game.
             </p>
         </section>
-        <section class="blue">
+        <section>
             <svg class="blob-motion" id="visual" viewBox="0 0 960 540" width="960" height="540"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
                 <g transform="translate(469.0008303261919 290.5628839753174)">
                     <path id="blob1"
                         d="M114.8 -170.9C136.6 -118.5 133.8 -70.8 159.1 -15.1C184.3 40.6 237.6 104.3 223 128C208.4 151.6 125.9 135.3 58.7 158.5C-8.4 181.7 -60.1 244.5 -108 248.2C-156 251.9 -200.1 196.4 -203.3 141.4C-206.5 86.3 -168.7 31.6 -158 -27.6C-147.3 -86.9 -163.6 -150.7 -141.8 -203.1C-120 -255.5 -60 -296.5 -6.7 -288.5C46.5 -280.4 93 -223.3 114.8 -170.9"
-                        fill="#fe2c54"></path>
+                        fill="#d63031"></path>
                 </g>
                 <g transform="translate(469.5275524871505 293.0558625688694)" style="visibility: hidden;">
                     <path id="blob2"
                         d="M140.7 -141.6C196.1 -121.2 264.2 -89.9 283.7 -40.9C303.3 8.1 274.2 74.8 226 104.4C177.8 134 110.6 126.5 57.7 135.9C4.8 145.4 -33.7 171.8 -75.7 172.1C-117.7 172.4 -163.2 146.4 -200.7 104.6C-238.3 62.9 -267.8 5.2 -268.9 -57.6C-270.1 -120.5 -242.7 -188.6 -193.1 -210C-143.6 -231.4 -71.8 -206.2 -14.6 -188.8C42.6 -171.5 85.3 -162 140.7 -141.6"
-                        fill="#fe2c54"></path>
+                        fill="#d63031"></path>
                 </g>
             </svg>
             <script>
@@ -58,21 +60,22 @@
                 )
                 tween.start()
             </script>
-            <form action="backend.py" method="post" style="z-index: 2;">
-                <label style="border-radius:20px" for="email" id="email">Email:</label>
-                <input type="email" id="email" style="font-size: 35px; color:black; border-radius:20px" required
-                    placeholder=" abc@gmail.com">
+            <form action="backend.py" method="post" style="z-index: 2; color:#16a085;">
+                <label style="border-radius:20px; font-weight: bold" for="email" id="email">Email:</label>
+                <input type="email" id="email" style="font-size: 35px; color:#2d3436; border-radius:20px; 
+                background-color: #00b894" required placeholder=" abc@gmail.com">
                 <br>
-                <label style="border-radius:20px" for="username" id="username">Username:</label>
-                <input type="text" id="username" style="font-size: 35px; color:black; border-radius:20px" minlength="3"
-                    required placeholder=" ABC">
+                <label style="border-radius:20px; font-weight: bold" for="username" id="username">Username:</label>
+                <input type="text" id="username" style="font-size: 35px; color:#2d3436; border-radius:20px; 
+                background-color: #00b894" minlength="3" required placeholder=" ABC">
                 <br>
-                <label style="border-radius:20px" for="password" id="password">Password:</label>
-                <input type="password" id="password" style="font-size: 35px; color:black; border-radius:20px"
-                    minlength="6" required placeholder=" ****">
+                <label style="border-radius:20px; font-weight: bold;" for="password" id="password">Password:</label>
+                <input type="password" id="password" style="font-size: 35px; color:#2d3436; border-radius:20px; 
+                background-color: #00b894" minlength="6" required placeholder=" ****">
                 <br>
-                <label style="border-radius:20px" for="donation" id="donation">Donation:</label>
-                <select id="donation" style="font-size: 35px; border-radius:20px">
+                <label style="border-radius:20px; font-weight: bold" for="donation" id="donation">Donation:</label>
+                <select id="donation" style="font-size: 35px; border-radius:20px; 
+                background-color: #00b894; color: #2d3436;">
                     <option style="font-size: 35px; border-radius:20px">...</option>
                     <option value="visa">Visa</option>
                     <option value="mastercard">Mastercard</option>
@@ -80,11 +83,14 @@
                     <option value="pb&jsandwiches">Pb&j Sandwiches</option>
                 </select>
                 <br>
-                <input type="reset" style="font-size: 35px; color:black; border-radius:20px">
+                <input type="reset" style="font-size: 35px; color:#2d3436; border-radius:20px; 
+                background-color: #00b894">
                 <br>
-                <input type="submit" style="font-size: 35px; color:black; border-radius:20px">
+                <input type="submit" style="font-size: 35px; color:#2d3436; border-radius:20px; 
+                background-color: #00b894">
                 <br>
-                <button style="font-size: 35px; color:black; border-radius:20px">
+                <button style="font-size: 35px; color:#2d3436; border-radius:20px; 
+                background-color: #00b894">
                     Press To Play
                 </button>
             </form>
@@ -97,16 +103,268 @@
                 </svg>
             </div>
         </section>
-        <div class="spacer bluewave"></div>
         <div class="spacer waves"></div>
-        <section class="red">
-            <h1>Nice Curves</h1>
-            <p>Ratione impedit dolore est suscipit fugit ipsum distinctio repellendus neque deserunt
-                fugiat rerum obcaecati
-                inventore sapiente quasi eius, error, ut quas deleniti, cumque tenetur quis laboriosam voluptatem dicta?
-                Nihil, hic?</p>
+        <section class="green">
+            <pyscript>from tkinter import *
+                import random
+
+                GAME_WIDTH = 700
+                GAME_HEIGHT = 700
+                SPEED = 50
+                SPACE_SIZE = 50
+                BODY_PARTS = 3
+                SNAKE_COLOR = "#00FF00"
+                FOOD_COLOR = "#FF0000"
+                BACKGROUND_COLOR = "#000000"
+
+
+                class Snake:
+
+                def __init__(self):
+                self.body_size = BODY_PARTS
+                self.coordinates = []
+                self.squares = []
+
+                for i in range(0, BODY_PARTS):
+                self.coordinates.append([0, 0])
+
+                for x, y in self.coordinates:
+                square = canvas.create_rectangle(x, y,
+                x + SPACE_SIZE, y + SPACE_SIZE,
+                fill=SNAKE_COLOR, tag="snake")
+                self.squares.append(square)
+
+
+                class Food:
+
+                def __init__(self):
+                x = random.randint(0, (GAME_WIDTH / SPACE_SIZE) - 1) * SPACE_SIZE
+                y = random.randint(0, (GAME_HEIGHT / SPACE_SIZE) - 1) * SPACE_SIZE
+
+                self.coordinates = [x, y]
+
+                canvas.create_oval(x, y, x + SPACE_SIZE, y + SPACE_SIZE,
+                fill=FOOD_COLOR, tag="food")
+
+
+                def next_turn(snake, food):
+                global score
+                global GAME_WIDTH, GAME_HEIGHT
+
+                x, y = snake.coordinates[0]
+
+                if direction == "up":
+                y -= SPACE_SIZE
+                elif direction == "down":
+                y += SPACE_SIZE
+                elif direction == "left":
+                x -= SPACE_SIZE
+                elif direction == "right":
+                x += SPACE_SIZE
+
+                snake.coordinates.insert(0, (x, y))
+
+                square = canvas.create_rectangle(x, y,
+                x + SPACE_SIZE, y + SPACE_SIZE,
+                fill=SNAKE_COLOR)
+
+                snake.squares.insert(0, square)
+
+                if x == food.coordinates[0] and y == food.coordinates[1]:
+
+                global score
+
+                score += 1
+
+                label.config(text="Score:{}".format(score))
+
+                canvas.delete("food")
+
+                food = Food()
+
+                else:
+
+                del snake.coordinates[-1]
+
+                canvas.delete(snake.squares[-1])
+
+                del snake.squares[-1]
+
+                if check_collisions(snake):
+                game_over()
+
+                elif x < 0: x=650 snake.coordinates.insert(0, (x, y)) square=canvas.create_rectangle(x, y, x +
+                    SPACE_SIZE, y + SPACE_SIZE, fill=SNAKE_COLOR) snake.squares.insert(0, square) if
+                    x==food.coordinates[0] and y==food.coordinates[1]: score +=1 label.config(text="Score:{}"
+                    .format(score)) canvas.delete("food") food=Food() else: del snake.coordinates[-1]
+                    canvas.delete(snake.squares[-1]) del snake.squares[-1] window.after(SPEED, next_turn, snake, food)
+                    elif x>= GAME_WIDTH:
+                    x = 0
+                    snake.coordinates.insert(0, (x, y))
+
+                    square = canvas.create_rectangle(x, y,
+                    x + SPACE_SIZE, y + SPACE_SIZE,
+                    fill=SNAKE_COLOR)
+
+                    snake.squares.insert(0, square)
+
+                    if x == food.coordinates[0] and y == food.coordinates[1]:
+                    score += 1
+
+                    label.config(text="Score:{}".format(score))
+
+                    canvas.delete("food")
+
+                    food = Food()
+
+                    else:
+
+                    del snake.coordinates[-1]
+
+                    canvas.delete(snake.squares[-1])
+
+                    del snake.squares[-1]
+                    window.after(SPEED, next_turn, snake, food)
+                    elif y < 0: y=650 snake.coordinates.insert(0, (x, y)) square=canvas.create_rectangle(x, y, x +
+                        SPACE_SIZE, y + SPACE_SIZE, fill=SNAKE_COLOR) snake.squares.insert(0, square) if
+                        x==food.coordinates[0] and y==food.coordinates[1]: score +=1 label.config(text="Score:{}"
+                        .format(score)) canvas.delete("food") food=Food() else: del snake.coordinates[-1]
+                        canvas.delete(snake.squares[-1]) del snake.squares[-1] window.after(SPEED, next_turn, snake,
+                        food) elif y>= GAME_HEIGHT:
+                        y = 0
+                        snake.coordinates.insert(0, (x, y))
+
+                        square = canvas.create_rectangle(x, y,
+                        x + SPACE_SIZE, y + SPACE_SIZE,
+                        fill=SNAKE_COLOR)
+
+                        snake.squares.insert(0, square)
+
+                        if x == food.coordinates[0] and y == food.coordinates[1]:
+                        score += 1
+
+                        label.config(text="Score:{}".format(score))
+
+                        canvas.delete("food")
+
+                        food = Food()
+
+                        else:
+
+                        del snake.coordinates[-1]
+
+                        canvas.delete(snake.squares[-1])
+
+                        del snake.squares[-1]
+
+                        window.after(SPEED, next_turn, snake, food)
+                        else:
+                        window.after(SPEED, next_turn, snake, food)
+
+
+                        def change_direction(new_direction):
+                        global direction
+
+                        if new_direction == 'left':
+                        if direction != 'right':
+                        direction = new_direction
+                        elif new_direction == 'right':
+                        if direction != 'left':
+                        direction = new_direction
+                        elif new_direction == 'up':
+                        if direction != 'down':
+                        direction = new_direction
+                        elif new_direction == 'down':
+                        if direction != 'up':
+                        direction = new_direction
+
+
+                        def check_collisions(snake):
+                        x, y = snake.coordinates[0]
+
+                        for body_part in snake.coordinates[1:]:
+                        if x == body_part[0] and y == body_part[1]:
+                        return True
+                        return False
+
+
+                        def game_over():
+                        global retry_window
+
+                        canvas.delete(ALL)
+                        canvas.create_text(canvas.winfo_width() / 2, canvas.winfo_height() / 2,
+                        font=('consolas', 70), text="GAME OVER",
+                        fill="red", tag="gameover")
+
+                        retry_window = Tk()
+                        retry = Button(retry_window, text='retry', command=reset,
+                        font=('Ink Free', 40, 'bold'),
+                        bg='#5a5a5a', fg='white')
+                        retry.pack()
+                        retry_window.mainloop()
+
+
+                        def reset():
+                        global Snake
+                        global Food
+                        global snake
+                        global food
+                        global next_turn
+                        global retry_window
+                        global score
+
+                        score = 0
+                        label.config(text="Score:{}".format(score))
+                        snake = Snake()
+                        food = Food()
+                        next_turn(snake, food)
+                        canvas.delete('gameover')
+                        retry_window.destroy()
+
+
+                        window = Tk()
+                        window.title("Snake game")
+                        window.resizable(False, False)
+                        window.config(bg='#5a5a5a')
+
+                        score = 0
+                        direction = 'left'
+
+                        label = Label(window,
+                        text="Score:{}".format(score),
+                        font=('Ink Free', 40, 'bold'),
+                        bg='#5a5a5a',
+                        fg='white')
+                        label.pack()
+
+                        canvas = Canvas(window, bg=BACKGROUND_COLOR,
+                        height=GAME_HEIGHT, width=GAME_WIDTH)
+                        canvas.pack()
+
+                        window.update()
+
+                        window_width = window.winfo_width()
+                        window_height = window.winfo_height()
+                        screen_width = window.winfo_screenwidth()
+                        screen_height = window.winfo_screenheight()
+
+                        x = int((screen_width / 2) - (window_width / 2))
+                        y = int((screen_height / 2) - (window_height / 2))
+
+                        window.geometry(f"{window_width}x{window_height}+{x}+{y}")
+
+                        window.bind('<Left>', lambda event: change_direction('left'))
+                            window.bind('<Right>', lambda event: change_direction('right'))
+                                window.bind('<Up>', lambda event: change_direction('up'))
+                                    window.bind('<Down>', lambda event: change_direction('down'))
+
+                                        snake = Snake()
+                                        food = Food()
+
+                                        next_turn(snake, food)
+
+                                        window.mainloop()</pyscript>
         </section>
-        <div class="spacer waves flip"></div>
     </main>
 </body>
 
