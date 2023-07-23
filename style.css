@@ -1,11 +1,52 @@
+form{
+    padding-top: 75px;
+}
+
 header {
     font-size: 65px;
-    font-family: 'Bodoni Moda', serif
+}
+
+input {
+    border-radius:20px;
+    background-color: transparent;
+    border:#2d3436 solid 1px;
+    font-size: 35px; 
+    color:#2d3436
+}
+
+input:focus, input:active {
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    position: absolute;
+    padding: 10px;
+    font-weight: bold;
+    border-radius:20px;
+    background-color: transparent;
+    border:#2d3436 solid 1px;
+    font-size: 35px; 
+    color:#2d3436
+}
+
+select {
+    border-radius:20px;
+    background-color: transparent;
+    border:#2d3436 solid 1px;
+    font-size: 35px; 
+    color:#2d3436
+}
+
+label {
+    border-radius:20px; 
+    font-weight: bold;
 }
 
 #he1 {
     border-bottom: solid 5px #00b894;
     z-index: 5;
+    font-family: 'Bodoni Moda', serif
 }
 
 main {
@@ -19,6 +60,8 @@ body {
     background: #2d3436;
     font-size: 35px;
     overflow-x: hidden;
+    font-size: 35px; 
+    border-radius:20px
 }
 
 section {
@@ -31,7 +74,7 @@ section {
 }
 
 .green {
-    background: #00b894;
+    background: #16a085;
     color: #2d3436;
 }
 
@@ -61,7 +104,7 @@ section {
     border-radius: 100% 45%;
     width: 61%;
     height: 100%;
-    background: #00b894;
+    background: #16a085;
     transform: translate(75%, 50%);
 }
 
@@ -88,7 +131,7 @@ section {
 
 }
 
-.wave {
+.wavee {
     position: absolute;
     top: 0;
     left: 0;
@@ -97,15 +140,15 @@ section {
     line-height: 0;
 }
 
-.wave svg {
+.wavee svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 130px;
+    height: 190px;
 }
 
-.wave .shape-fill {
-    fill: #00b894;
+.wavee .shape-fill {
+    fill: #2d3436;
 }
 
 .spacer {
