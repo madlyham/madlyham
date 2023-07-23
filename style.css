@@ -7,9 +7,10 @@ header {
 }
 
 input {
+    margin-top: 5px;
     border-radius:20px;
     background-color: transparent;
-    border:#2d3436 solid 1px;
+    border:#2d3436 solid 2px;
     font-size: 35px; 
     color:#2d3436
 }
@@ -19,21 +20,23 @@ input:focus, input:active {
 }
 
 a {
+    margin-top: 5px;
     text-decoration: none;
     position: absolute;
-    padding: 10px;
+    padding: 5px;
     font-weight: bold;
     border-radius:20px;
     background-color: transparent;
-    border:#2d3436 solid 1px;
+    border:#2d3436 solid 2px;
     font-size: 35px; 
     color:#2d3436
 }
 
 select {
+    padding: -15px;
     border-radius:20px;
     background-color: transparent;
-    border:#2d3436 solid 1px;
+    border:0;
     font-size: 35px; 
     color:#2d3436
 }
@@ -74,7 +77,7 @@ section {
 }
 
 .green {
-    background: #16a085;
+    background: #00b894;
     color: #2d3436;
 }
 
@@ -104,7 +107,7 @@ section {
     border-radius: 100% 45%;
     width: 61%;
     height: 100%;
-    background: #16a085;
+    background: #00b894;
     transform: translate(75%, 50%);
 }
 
@@ -126,7 +129,7 @@ section {
     border-top-right-radius: 50% 100%;
     bottom: 0;
     height: 20%;
-    background: #16a085;
+    background: #00b894;
     z-index: -1;
 
 }
@@ -198,12 +201,12 @@ section {
 }
 
 @media screen and (max-width: 600px){
-    * {
+    body {
         max-width: fit-content;
-        font-size: 30px;
+        font-size: 20px;
     }
     #he1 {
-        font-size: 40px;
-
+        font-size: 30px;
+        font-weight: bold;
     }
 }
