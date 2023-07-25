@@ -1,18 +1,42 @@
+:root {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background: #2d3436;
+    color: #00b894;
+    overflow-x: hidden;
+} 
+
+body::-webkit-scrollbar {
+    width: 0.3rem;
+}
+body::-webkit-scrollbar-track {
+    background: transparent
+}
+body::-webkit-scrollbar-thumb {
+    background: #636e72;
+}
+
 form{
-    padding-top: 75px;
+    display: inline-block;
+    width: max-content;
+    height: min-content;
+    margin-top: 10rem;
+    margin-left: 15rem;
+    font-size: 3rem;
 }
 
 header {
-    font-size: 65px;
+    font-size: 8rem;
 }
 
 input {
-    margin-top: 5px;
-    border-radius:20px;
+    margin-top: 0.25rem;
     background-color: transparent;
-    border:#2d3436 solid 2px;
-    font-size: 35px; 
-    color:#2d3436
+    border:#2d3436 solid 0.2rem;
+    font-size: 3rem; 
+    color:#2d3436;
+    border-radius:1rem;
 }
 
 input:focus, input:active {
@@ -20,51 +44,43 @@ input:focus, input:active {
 }
 
 a {
-    margin-top: 5px;
+    margin-top: 0.5rem;
     text-decoration: none;
     position: absolute;
-    padding: 5px;
+    padding: 0.5rem;
     font-weight: bold;
-    border-radius:20px;
+    border-radius:1rem;
     background-color: transparent;
-    border:#2d3436 solid 2px;
-    font-size: 35px; 
+    border:#2d3436 solid 0.2rem;
+    font-size: 2rem; 
     color:#2d3436
 }
 
 select {
-    padding: -15px;
-    border-radius:20px;
+    padding: -1rem;
+    border-radius:1rem;
     background-color: transparent;
     border:0;
-    font-size: 35px; 
+    font-size: 2rem; 
     color:#2d3436
 }
 
 label {
-    border-radius:20px; 
+    border-radius:1rem; 
     font-weight: bold;
 }
 
 #he1 {
-    border-bottom: solid 5px #00b894;
     z-index: 5;
-    font-family: 'Bodoni Moda', serif
+    font-family: 'Bodoni Moda', serif;
+    padding-top: 5rem;
+    display: block;
+    width: max-content;
+    height: min-content;
 }
 
 main {
-    font-size: 35px
-}
-
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    color: #00b894;
-    background: #2d3436;
-    font-size: 35px;
-    overflow-x: hidden;
-    font-size: 35px; 
-    border-radius:20px
+    font-size: 2rem;
 }
 
 section {
@@ -86,7 +102,7 @@ section {
 }
 
 .light {
-    background: #34495e
+    background: #636e72
 }
 
 .blue {
@@ -201,12 +217,13 @@ section {
 }
 
 @media screen and (max-width: 600px){
-    body {
+    :root {
         max-width: fit-content;
-        font-size: 20px;
+        font-size: 8px;
     }
     #he1 {
-        font-size: 30px;
-        font-weight: bold;
+        display: block;
+        width: max-content;
+        height: min-content;
     }
 }

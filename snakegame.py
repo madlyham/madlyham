@@ -6,9 +6,9 @@ GAME_HEIGHT = 700
 SPEED = 50
 SPACE_SIZE = 50
 BODY_PARTS = 3
-SNAKE_COLOR = "#00FF00"
-FOOD_COLOR = "#FF0000"
-BACKGROUND_COLOR = "#000000"
+SNAKE_COLOR = "#00b894"
+FOOD_COLOR = "#d63031"
+BACKGROUND_COLOR = "#2d3436"
 
 
 class Snake:
@@ -239,6 +239,7 @@ def game_over():
                    bg='#5a5a5a', fg='white')
     retry.pack()
     retry_window.mainloop()
+    print(f'your score is: {score}')
 
 
 def reset():
